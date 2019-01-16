@@ -1,0 +1,121 @@
+body,p,h4{
+    margin:0 ;
+    padding:0;
+    list-style:none;
+}
+*{
+    box-sizing:border-box;
+}
+body,button{
+    font-family: tahoma,hiragino sans gb,'wenquanyi micro hei','Microsoft YaHei',arial,'SimSun';
+    color: #333;
+    font-size: 14px;
+}
+.clear:before{
+    content:"";
+    display:table;
+}
+.clear:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.lf{
+    float:left;
+}
+.rt{
+    float:right;
+}
+/*banner开始*/
+#bannerBox{
+    width:1000px;
+    height:75px;
+    margin:0 auto;
+    padding:10px 0;
+    line-height:55px;
+}
+#logoTop>img{
+    width:160px;
+    position: relative;
+    top: 7px;
+}
+#loginTop{
+    display:inline-block;
+    float:right;
+    width:200px;
+}
+#loginTop>a{
+    padding:5px 10px;
+    font-size: 16px;
+    margin-left: 7px;
+    background: #4dc060;
+    border-radius:3px;
+    color:#fff;
+}
+/*banner结束*/
+
+/*main开始*/
+#main{
+    width: 1000px;
+    background: #fff;
+    border: 4px solid #e8e8e8;
+    padding: 60px;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+#loginForm{
+    width:400px;
+    height:360px;
+    margin:0 auto;
+}
+#loginForm>h4{
+    font-size: 20px;
+    color: #666;
+    margin-bottom:10px;
+}
+#loginForm .form-group {
+    position: relative;
+    margin-bottom: 15px;
+    line-height: 100%;
+}
+input.form-control {
+    width: 100%;
+    height: 44px;
+    font-size: 14px;
+    background: #fff;
+    padding: 0 20px;
+    border-radius: 2px;
+    border: 1px solid #cbcbcb;
+}
+.form-group .green{
+    color:#4dc060;
+}
+input.messageCode {
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    padding: 0 30px;
+    height: 42px;
+    border: 0;
+    background: #fa0;
+    color: #fff;
+    cursor: pointer;
+    outline: none;
+}
+#LoginSubmit {
+    width: 100%;
+    color: #fff;
+    border-radius: 2px;
+    display: block;
+    font-size: 18px;
+    padding: 15px 0;
+    text-align: center;
+    background: #4dc060;
+    cursor: pointer;
+}
+#loginForm .submit{
+
+    cursor: no-drop;
+    background: #ccc;
+}
+/*main结束*/

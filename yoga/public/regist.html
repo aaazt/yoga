@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/regist.css"/>
+</head>
+<body>
+    <!--banner开始-->
+    <header id="banner">
+        <div id="bannerBox">
+            <a id="logoTop" href="index.html" title="瑜伽网，练瑜伽就上瑜伽网" >
+                <img src="imgs/login_regist/logo.png" alt="瑜伽网，练瑜伽就上瑜伽网"/>
+            </a>
+            <div id="loginTop">已有账号？
+                <a href="login.html">立即登录</a>
+            </div>
+        </div>
+    </header>
+    <!--banner结束-->
+    <!--main开始-->
+    <div id="main" class="clear">
+        <form id="loginForm">
+            <h4>注册——加入瑜伽网</h4>
+            <div class="form-group">
+                <input type="tel" id="uname" class="form-control" name="uname" placeholder="请输入手机号" autocomplete="off" maxlength="11" autofocus>
+            </div>
+
+            <div class="form-group">
+                <input type="password" id="upwd" class="form-control" name="upwd" placeholder="请输入密码（6位数字或字母）" maxlength="8" spellcheck="false">
+            </div>
+            <div class="form-group">
+                <input type="password" id="againPwd" class="form-control" name="againPwd" placeholder="请确认密码" maxlength="12" spellcheck="false">
+            </div>
+            <div class="form-group">
+                <input type="tel" id="ccap-text" name="ccap" class="form-control" placeholder="请输入验证码" maxlength="4">
+                <input type="button" class="messageCode" id="messageCode" value="3 6 2 9">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" value="checkbox" class="autologin" id="deal" checked="checked">
+                我已阅读并接受<a href="#" class="green" title="《瑜伽网用户协议》" target="_blank">《瑜伽网用户协议》</a>
+            </div>
+            <div class="form-group">
+                <span id="LoginSubmit" title="同意协议并注册" >同意协议并注册</span>
+            </div>
+        </form>
+    </div>
+    <!--main结束-->
+    <!--footer开始-->
+    <div id="footer"></div>
+    <!--footer结束-->
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/register.js"></script>
+
+</body>
+</html>
