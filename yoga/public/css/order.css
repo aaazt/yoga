@@ -1,0 +1,132 @@
+body,p,ul,h1,h2,h3,h4,h5,h6{
+    margin:0 ;
+    padding:0;
+    list-style:none;
+}
+*{
+    box-sizing:border-box;
+}
+body{
+    font-family: tahoma,hiragino sans gb,'wenquanyi micro hei','Microsoft YaHei',arial,'SimSun';
+    color: #333;
+    font-size: 14px;
+}
+
+.clear:before{
+    content:"";
+    display:table;
+}
+.clear:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.lf{
+    float:left;
+}
+.rt{
+    float:right;
+}
+a,
+a:hover{
+    text-decoration:none;
+    color:#333;
+}
+/*收货人信息开始*/
+#consignee{
+    width:1190px;
+    margin:0 auto;
+}
+#consignee>h3{
+    padding-left: 15px;
+    height: 45px;
+    line-height: 45px;
+    font-size:18px;
+    margin:25px 0;
+    background-color:#F8FAFC;
+    border:1px solid #afafaf;
+}
+
+/*收货人信息结束*/
+
+#zhifubao{
+    width:200px;
+    height:70px;
+    border:1px solid #e8e8e8;
+    padding-left:20px;
+}
+#zhifubao:hover{
+    border:1px solid #53A634;
+}
+#zhifubao>img  {
+    position:relative;
+    top:13px;
+}
+
+#order{
+    width:1190px;
+    margin:0 auto 25px auto;
+}
+#cartTab{
+    border:1px solid #afafaf;
+    width:100%;
+    vertical-align: middle;
+}
+#cartTab>thead{
+    height:35px;
+    line-height:35px;
+    background-color:#F8FAFC;
+    /*border-bottom:1px solid #afafaf;*/
+}
+#cartTab>tbody>tr{
+    padding:15px 5px;
+    height:140px;
+
+}
+#cartList img{
+    width:168px;
+}
+#cartList td{
+    text-align:center;
+}
+#cartList td.count>input{
+    width:30px;
+    padding:0 8px;
+}
+#cartList td.count>a{
+    padding:10px;
+    cursor:pointer;
+    font-size:18px;
+}
+#total>p{
+    margin:20px;
+}
+#total>p>b,#total>p>strong{
+    color:#FF6600;
+    font-size:18px;
+}
+#total>p>span{
+     font-size:16px;
+     display: inline-block;
+     width:95px;
+    text-align: right;
+ }
+#total>p>i{
+    font-size:18px;
+    color:#888;
+    text-decoration: line-through;
+    padding:0 15px;
+}
+
+
+#goPrivate>a{
+    color:#4dc060;
+}
+#pay{
+    float: right;
+    padding:8px 16px;
+    background-color:#4dc060;
+    border-radius: 5px;
+    color:#fff;
+    font-size:16px;
+}

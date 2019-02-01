@@ -1,0 +1,59 @@
+#aside_lf{
+    width:860px;
+    min-height:500px;
+}
+#aside_rt{
+    width:300px;
+    min-height:500px;
+}
+.onfocus{
+    background: #44b549;
+    color: #fff;
+    border-radius: 2px;
+}
+/*左侧栏开始*/
+#masterInformation ul li {
+    border-bottom: 1px dotted #dbdbdb;
+    width:860px;
+    line-height: 45px;
+    display: block;
+}
+
+#masterInformation ul li a{
+    padding:5px 12px;
+    font-weight:bold;
+    color:#6E6767;
+}
+#masterInformation ul li a.active{
+    background-color:#4dc060;
+    border-radius: 3px;
+    color:#fff;
+}
+/*课程展示*/
+#masterShow{
+    padding:20px 0;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+#masterShow dl{
+    width:210px;
+    height:220px;
+    padding:5px 0;
+    margin-bottom:15px;
+}
+#masterShow dt img{
+    width:207px;
+    border-radius: 4px;
+}
+
+#masterShow dd h4{
+    font-weight:normal;
+    margin:10px 0;
+}
+#masterShow dd p{
+    color:#999;
+}
+#masterShow a:hover{
+    color:#4dc060;
+}

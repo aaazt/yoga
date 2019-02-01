@@ -1,0 +1,55 @@
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <title>会馆</title>
+    <link rel="stylesheet" href="css/guild.css"/>
+    <link rel="stylesheet" href="css/comment.css"/>
+</head>
+<body>
+    <div id="header"></div>
+    <!--banner开始-->
+
+    <div id="banner">
+        <a href="#">
+            <img src="imgs/guild/banner.jpg" >
+        </a>
+    </div>
+    <!--banner结束-->
+    <!--main主体开始-->
+    <div id="container" class="clear">
+        <!--左侧栏开始-->
+        <div id="aside_lf" class="lf">
+            <div id="location">
+                <a href="#">首 页</a>
+                &gt;
+                <a href="#" class="active">会 馆</a>
+            </div>
+            <ul id="guildChoose">
+                <li><strong>地区</strong></li>
+                <li class="active"><a  href="#">全部</a></li>
+                <li><a href="#">北京</a></li>
+                <li><a href="#">上海</a></li>
+                <li><a href="#">天津</a></li>
+                <li><a href="#">重庆</a></li>
+                <li><a href="#">广西</a></li>
+                <li><a href="#">河南</a></li>
+                <li><a href="#">江苏</a></li>
+                <li><a href="#">辽宁</a></li>
+                <li><a href="#">浙江</a></li>
+                <li><a href="#">山东</a></li>
+                <li><a href="#">湖北</a></li>
+                <li><a href="#">河北</a></li>
+            </ul>
+            <div id="guildShows">
+                <!--========异步动态生成=========-->
+            </div>
+        </div>
+           
+        <div id="asideRt"></div>
+    </div>
+    <!--main主体结束-->
+    <div id="footer"></div>
+    <script src="js/jquery-1.11.3.js"></script>
+    <script src="js/guild.js"></script>
+</body>
+</html>

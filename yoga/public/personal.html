@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <title>个人中心</title>
+    <link rel="stylesheet" href="css/personal.css"/>
+    <link rel="stylesheet" href="css/comment.css"/>
+</head>
+<body>
+<!--header开始-->
+<div id="header"></div>
+<!--header结束-->
+<!--main开始-->
+<!--位置开始-->
+<div id="main" class="clear">
+    <div id="location">
+        <a href="index.html">首 页</a>
+        &gt;
+        <a class="active">个人中心</a>
+    </div>
+    <!--位置结束-->
+    <aside id="aside_lf" class="lf">
+        <div id="portrait">
+            <p class="rt">
+                <b>匿名</b><br/>
+                <span>会员</span>
+            </p>
+            <img src="imgs/personal/portrait.gif" >
+        </div>
+        <div id="center">
+            <h3>个人中心</h3>
+            <ul>
+                <li><a href="storeCart.html">购物车</a></li>
+                <li><a href="#">我的收藏</a></li>
+                <li><a href="#">我的评论</a></li>
+                <li><a href="#">已购视频</a></li>
+            </ul>
+            <h3>优惠券</h3>
+            <ul>
+                <li><a href="#">我的优惠券</a></li>
+            </ul>
+            <h3>我的瑜伽网</h3>
+            <ul>
+                <li><a href="#">账号设置</a></li>
+                <li><a href="#">消息通知</a></li>
+                <li><a href="#">意见反馈</a></li>
+            </ul>
+        </div>
+    </aside>
+    <div id="account" class="rt">
+        <h3>账号信息 <a href="#">签 到</a></h3>
+        <ul id="userList">
+            <li>
+                <span>账号：</span>
+                <em>18301535482</em>
+            </li>
+            <li>
+                <span>密码：</span>
+                <em>********</em>
+                <a href="#">修改</a>
+            </li>
+            <li>
+                <span>E-mail：</span>
+                <em>18301535482@163.com</em>
+                <a href="#">修改</a>
+            </li>
+            <li>
+                <span>账号：</span>
+                <em>
+                    <input type="radio" checked/>女
+                    <input type="radio"/>男
+                </em>
+            </li>
+            <li>
+                <span>生日：</span>
+                <em>18301535482</em>
+            </li>
+            <li>
+                <span>收货地址：</span>
+                <em>
+                    <textarea name="" id="address" cols="70" rows="2"></textarea>
+                </em>
+            </li>
+            <li>
+                <span>瑜伽宣言：</span>
+                <em>
+                    <textarea name="declaration" id="declaration" cols="70" rows="5" placeholder="TA 很懒，还没任何宣言..."></textarea>
+                </em>
+            </li>
+        </ul>
+        <div id="face">
+            <p>
+                <img width="150" src="imgs/personal/portrait.gif" />
+                <a href="#">更改头像</a>
+            </p>
+            <a href="#" id="uploading">上传头像</a>
+            <a href="#" id="submit">提 交</a>
+        </div>
+    </div>
+
+</div>
+<!--main结束-->
+
+<!--footer开始-->
+<div id="footer"></div>
+<!--footer结束-->
+
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/personal.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <title>热门推荐</title>
+    <style>
+        body,p,ul,h2,{
+            margin:0 ;
+            padding:0;
+            list-style:none;
+        }
+        *{
+            box-sizing:border-box;
+        }
+        body,button{
+            font-family: tahoma,hiragino sans gb,'wenquanyi micro hei','Microsoft YaHei',arial,'SimSun';
+            color: #333;
+            font-size: 14px;
+        }
+        .rt{
+            float:right;
+        }
+        a,
+        a:hover{
+            text-decoration:none;
+            color:#333;
+        }
+        #aside_rt>h2{
+            border-bottom: 1px solid #dbdbdb;
+            font-size: 16px;
+            font-weight: normal;
+            height: 30px;
+            display: block;
+        }
+        #aside_rt>h2>a{
+            display:inline-block;
+            width: 33%;
+            height: 30px;
+            line-height: 30px;
+            text-align:center;
+            border-bottom: 1px solid #44b549;
+            color: #44b549;
+        }
+
+        #recommend .recommendLi{
+            width:300px;
+            height:112px;
+            padding:20px 2px;
+            border-bottom:1px dotted #EBEBEB;
+        }
+        #recommend .recommendLi .recommendImg img{
+            width:112px;
+            height:70px;
+        }
+        #recommend .recommendLi .recommendMsg{
+            width:170px;
+            height:70px;
+        }
+        #recommend .recommendLi .recommendMsg>p{
+            margin: 10px 0;
+            color: #bbb;
+            font-size: 13px;
+        }
+
+    </style>
+</head>
+<body>
+<!--右侧栏开始-->
+<div id="aside_rt" class="rt">
+    <!--热门推荐开始-->
+    <h2><a>热门推荐</a></h2>
+    <ul id="recommend">
+        <!--========异步动态生成=========-->
+        <li class="recommendLi">
+            <div class="recommendMsg rt">
+                <a href="storeCart.html" title="[训练计划] 瑜伽有氧运动练习">[训练计划] 瑜伽有氧运动练习</a>
+                <p>播放：6784次</p>
+            </div>
+            <div class="recommendImg">
+                <a href="storeCart.html" title="[训练计划] 瑜伽有氧运动练习">
+                    <img src="imgs/headline/recommend01.jpg" alt="[训练计划] 瑜伽有氧运动练习">
+                </a>
+            </div>
+        </li>
+        <li class="recommendLi">
+            <div class="recommendMsg rt">
+                <a href="storeCart.html" title="[限时抢购] 瑜伽网丨超值VIP视频年卡">[限时抢购] 瑜伽网丨超值VIP视频年卡</a>
+                <p>播放：70791次</p>
+            </div>
+            <div class="recommendImg">
+                <a href="storeCart.html" title="[限时抢购] 瑜伽网丨超值VIP视频年卡">
+                    <img src="imgs/headline/recommend02.jpg" alt="[限时抢购] 瑜伽网丨超值VIP视频年卡">
+                </a>
+            </div>
+        </li>
+        <li class="recommendLi">
+            <div class="recommendMsg rt">
+                <a href="storeCart.html" title="[魅力女性] 哈他丨60分钟课堂×10">[魅力女性] 哈他丨60分钟课堂×10</a>
+                <p>播放：57905次</p>
+            </div>
+            <div class="recommendImg">
+                <a href="storeCart.html" title="[魅力女性] 哈他丨60分钟课堂×10">
+                    <img src="imgs/headline/recommend03.jpg" alt="[魅力女性] 哈他丨60分钟课堂×10">
+                </a>
+            </div>
+        </li>
+        <li class="recommendLi">
+            <div class="recommendMsg rt">
+                <a href="#" title="[瑜伽初级] 阴瑜伽与心理学">[瑜伽初级] 阴瑜伽与心理学</a>
+                <p>播放：65625次</p>
+            </div>
+            <div class="recommendImg">
+                <a href="#" title="[瑜伽初级] 阴瑜伽与心理学">
+                    <img src="imgs/headline/recommend04.jpg" alt="[瑜伽初级] 阴瑜伽与心理学">
+                </a>
+            </div>
+        </li>
+    </ul>
+    <!--热门推荐结束-->
+</div>
+<!--右侧栏结束-->
+<script src="js/jquery-1.11.3.js"></script>
+<script>
+    $.ajax({
+        type:"GET",
+        url:"/recommend",
+        success:function(recommendList){
+            var html="";
+            for(var i=0;i<recommendList.length;i++){
+                var r=recommendList[i];
+                html+=`
+                           <li class="recommendLi">
+                        <div class="recommendMsg rt">
+                            <a href="${r.rurl}" title="${r.rname}">${r.rname}</a>
+                            <p>播放：${r.rcount}</p>
+                        </div>
+                        <div class="recommendImg">
+                            <a href="${r.rurl}" title="${r.rname}">
+                                <img src="imgs/headline/${r.rpic}" alt="${r.rname}">
+                            </a>
+                        </div>
+                    </li>
+                `;
+            }
+            $("#recommend").html(html);
+        }
+    });
+</script>
+</body>
+</html>

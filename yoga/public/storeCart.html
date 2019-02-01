@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head lang="zh-cn">
+    <meta charset="UTF-8">
+    <title>购物车</title>
+    <link rel="stylesheet" href="css/storeCart.css"/>
+</head>
+<body>
+<!--header开始-->
+<div id="header"></div>
+<!--header结束-->
+<!--收货人信息开始-->
+<div id="consignee">
+    <h3>收货人信息</h3>
+    <form id="consigneeForm" action="position">
+        <div>
+            姓名：<input type="text" id="username"/>
+            </br>
+            <span>请填写您的姓名，最长为8个字符</span>
+        </div>
+        <div>
+            手机号码：<input type="tel"/>
+            </br>
+            <span style="margin-left: 70px;">请填写您的手机号码</span>
+        </div>
+        <div>
+            邮箱：<input type="email"/>
+            </br>
+            <span>请填写您的邮箱</span>
+        </div>
+    </form>
+    <h3>我的购物车</h3>
+    <div id="cart" class="clear">
+        <table id="cartTab">
+            <thead>
+                <tr>
+                    <th></th>
+                    <th>产品图片</th>
+                    <th>课程名称</th>
+                    <th>课程信息</th>
+                    <th>单价/元</th>
+                    <th>数量</th>
+                    <th>小计</th>
+                    <th>操作</th>
+                </tr>
+            </thead>
+            <tbody id="cartList">
+            </tbody>
+        </table>
+        <div id="total" class="rt">
+            <p>合计：<b>¥ 298</b></p>
+            <p><a href="order.html" id="order" target="pay">生成订单</a></p>
+
+        </div>
+
+    </div>
+
+</div>
+<!--收货人信息结束-->
+<!--footer开始-->
+<div id="footer"></div>
+<!--footer结束-->
+<script src="js/jquery-1.11.3.js"></script>
+<script src="js/storeCart.js"></script>
+</body>
+</html>

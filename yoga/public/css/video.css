@@ -1,0 +1,66 @@
+#aside_lf{
+    width:860px;
+    min-height:500px;
+}
+#aside_rt{
+    width:300px;
+    min-height:500px;
+}
+.onfocus{
+    background: #44b549;
+    color: #fff;
+    border-radius: 2px;
+}
+.onfocus:hover{
+    color:#fff;
+}
+/*左侧栏开始*/
+#classInformation ul li {
+    border-bottom: 1px dotted #dbdbdb;
+    width:860px;
+    line-height: 45px;
+    display: block;
+}
+#classInformation ul li:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+#classInformation ul li strong {
+    color: #999;
+    font-weight: normal;
+    float: left;
+}
+#classInformation ul li div{
+    display:inline-block;  width:745px;
+    float:left;
+}
+#classInformation ul li a{
+    padding:5px 12px;
+}
+
+/*课程展示*/
+#videoShow{
+    padding:20px 0;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+}
+#videoShow dl{
+    width:210px;
+    height:220px;
+    padding:5px 0;
+    margin-bottom:15px;
+}
+#videoShow dt img{
+    width:207px;
+    border-radius: 4px;
+}
+
+#videoShow dd h4{
+    font-weight:normal;
+    margin:10px 0;
+}
+#videoShow dd p{
+    color:#999;
+}

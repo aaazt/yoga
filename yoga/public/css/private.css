@@ -1,0 +1,128 @@
+#aside_lf{
+    width:860px;
+    min-height:500px;
+}
+#aside_rt{
+    width:300px;
+    min-height:500px;
+}
+/*左侧栏开始*/
+#classInformation{
+    width:870px;
+    margin-top:25px;
+}
+#classInformation img{
+    width:425px;
+}
+#classInformation .classShow{
+    width:425px;
+    height:320px;
+    margin-bottom:30px;
+    margin-right:10px;
+float:left;
+}
+#classInformation dd{
+    width:425px;
+    display: block;
+    overflow: hidden;
+    margin-top: 10px;
+}
+#classInformation dd>h3{
+    line-height: 26px;
+    font-weight: normal;
+}
+/*左侧栏结束*/
+/*右侧栏开始*/
+#aside_rt>h2{
+    border-bottom: 1px solid #dbdbdb;
+    font-size: 16px;
+    font-weight: normal;
+    height: 30px;
+    display: block;
+}
+#aside_rt>h2>a{
+    display:inline-block;
+    width: 33%;
+    height: 30px;
+    line-height: 30px;
+    text-align:center;
+    border-bottom: 1px solid #44b549;
+    color: #44b549;
+}
+/*公告*/
+#notice{
+    font-size: 16px;
+    line-height: 24px;
+    margin: 20px 14px;
+}
+#notice>b{
+    color:#FF6600;
+}
+/*优惠专区*/
+#favorable a.favorable{
+    display:block;
+    width:300px;
+    height:90px;
+    padding-left:10px;
+    margin-top:15px;
+    cursor:pointer;
+    background-color:#4dc060;
+    color:#fff;
+}
+#favorable a.f_purple{
+    background-color:#9A47EA;
+}
+#favorable a.f_red{
+    background-color:#CA4385;
+    margin-bottom:20px;
+}
+#favorable a.favorable>div{
+    /*float:left;*/
+    display:inline-block;
+
+    /*line-height:70px;*/
+}
+#favorable a.favorable>div.fav_lf{
+    width:100px;
+    height:70px;
+    padding-left:10px;
+    border-right:1px dotted #fff;
+    position:relative;
+    top:-20px;
+}
+#favorable a.favorable>div.fav_mi{
+    width:142px;
+    height:70px;
+    padding-left:15px;
+    position:relative;
+    top:-10px;
+}
+#favorable a.favorable>div.fav_rt{
+    width:40px;
+    height:90px;
+    text-align:center;
+    padding-top:5px;
+    background-color:#000;
+    opacity: .6;
+}
+/*推荐列表*/
+#recommend .recommendLi{
+    width:300px;
+    height:112px;
+    padding:20px 2px;
+    border-bottom:1px dotted #EBEBEB;
+}
+#recommend .recommendLi .recommendImg img{
+    width:112px;
+    height:70px;
+}
+#recommend .recommendLi .recommendMsg{
+    width:170px;
+    height:70px;
+}
+#recommend .recommendLi .recommendMsg>p{
+    margin: 10px 0;
+    color: #bbb;
+    font-size: 13px;
+}
+/*右侧栏结束*/

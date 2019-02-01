@@ -1,0 +1,134 @@
+/*main¿ªÊ¼*/
+#main{
+    width:1200px;
+    margin:0 auto;
+}
+/*×ó²à*/
+#aside_lf{
+    width:140px;
+}
+#portrait{
+    padding-bottom:10px;
+}
+#portrait>img{
+    width:60px;
+}
+#portrait>p{
+    width:60px;
+    height:60px;
+    line-height:20px;
+    padding-top:10px;
+}
+#center{
+    width:160px;
+    min-height:500px;
+    background-color:#FAFAFA;
+}
+#center>h3{
+    color:#4dc060;
+    padding:10px 5px;
+    margin:0 5px;
+    font-size:16px;
+    font-weight: normal;
+    border-bottom:1px solid #4dc060;
+}
+#center>ul{
+    width:100px;
+    margin:5px auto 25px auto;
+}
+#center>ul>li{
+    padding:10px 5px;
+    border-bottom: 1px dotted #afafaf;
+}
+#center>ul>li>a{
+    color:#4A4A4A;
+}
+/*ÓÒ²à*/
+#account{
+    width:1010px;
+    border-left:1px solid #E6E9F0;
+    position:relative;
+    height:600px;
+}
+#account>h3{
+    height:40px;
+    line-height:40px;
+    padding-left:10px;
+    border-bottom:1px solid #E6E9F0;
+    border-top:1px solid #E6E9F0;
+    background-color:#F8FAFC;
+}
+#account>h3>a{
+    padding:0 15px;
+    color:#fff;
+    background-color:#4dc060;
+    border-radius: 3px;
+    float:right;
+    position:relative;
+    top:-1px;
+}
+#account>ul{
+    padding:30px 80px;
+}
+#account>ul>li{
+    padding:15px 0;
+}
+#account>ul>li>span{
+    display:inline-block;
+    width:150px;
+    margin-right:30px;
+    text-align:right;
+    color:#999;
+}
+#account>ul>li>em{
+    font-style:normal;
+    display:inline-block;
+    width:300px;
+}
+#account>ul>li>a{
+    color:#FF6600;
+}
+#account>ul>li>em>textarea{
+    padding:10px;
+    position:relative;
+    top:35px;
+}
+
+#face{
+    width:200px;
+    position:absolute;
+    top:80px;
+    right:0;
+}
+#face>p{
+    width:170px;
+    height:200px;
+    padding:10px 10px 0 10px;
+    border:1px solid #EBEBEB;
+    margin-bottom:10px;
+}
+#face a{
+    color:#fff;
+    text-align:center;
+    font-family: "SimHei";
+    font-size:16px;
+}
+#face>p>a{
+    display:inline-block;
+    width:150px;
+    height:30px;
+    background-color:#2E2E2F;
+    line-height:30px;
+}
+#uploading{
+    padding:8px 10px;
+    background-color:#4dc060;
+    border-radius:3px;
+    margin-left:12px;
+}
+#submit{
+    padding:8px 10px;
+    background-color:#FF6600;
+    border-radius:3px;
+}
+/*main½áÊø*/

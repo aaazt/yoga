@@ -1,0 +1,65 @@
+body,p,ul,h1,h2,h3,h4,h5,h6,dd,dl,dt{
+    margin:0 ;
+    padding:0;
+    list-style:none;
+}
+*{
+    box-sizing:border-box;
+}
+body,button{
+    font-family: tahoma,hiragino sans gb,'wenquanyi micro hei','Microsoft YaHei',arial,'SimSun';
+    color: #333;
+    font-size: 14px;
+}
+.clear:before{
+    content:"";
+    display:table;
+}
+.clear:after{
+    content:"";
+    display:block;
+    clear:both;
+}
+.lf{
+    float:left;
+}
+.rt{
+    float:right;
+}
+a,
+a:hover{
+    text-decoration:none;
+    color:#333;
+}
+/*顶部banner广告*/
+#banner{
+    width:1190px;
+    height:90px;
+    margin:20px auto;
+    overflow: hidden;
+}
+/*顶部位置*/
+#location {
+    color: #999;
+    margin-bottom: 10px;
+    line-height: 35px;
+    /* background: url(imgs/pageIndex.gif) no-repeat left 4px; */
+    padding-left: 20px;
+}
+#location a.active{
+    color:#4dc060;
+}
+#location>span{
+    display: inline-block;
+    padding: 2px 6px;
+    background-color: #5CB85C;
+    margin-left: 10px;
+}
+#location>span>a{
+    color:#fff;
+}
+/*容器尺寸*/
+#container{
+    width:1190px;
+    margin:0 auto;
+}

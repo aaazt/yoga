@@ -1,0 +1,197 @@
+/*mian开始*/
+#main,
+#relevant{
+    width:1200px;
+    margin:0 auto;
+}
+
+#videoInfo{
+    width:1200px;
+    height:550px;
+    position:relative;
+}
+#video{
+    width:885px;
+    height:550px;
+    background-color:#333;
+    padding:0 20px;
+}
+#videoMsg{
+    width:315px;
+    height:550px;
+    overflow: hidden;
+    background-color:#222;
+    padding:10px;
+}
+#videoMsg>p{
+    width:279px;
+    height:37px;
+    line-height:32px;
+    border:1px solid #4dc060;
+    border-radius:3px;
+    margin-bottom:20px;
+}
+#videoMsg>p>a{
+    padding:9px 40px;
+    color:#fff;
+    position:relative;
+    top:2px;
+}
+#videoMsg>p>a.active{
+    background-color:#4dc060;
+}
+
+/*视频列表开始*/
+#videoList,
+#videoPrivate{
+    overflow-y:scroll;
+    position:absolute;
+    top:65px;
+    right:5px;
+    background-color:#222;
+    width:300px;
+    height:480px;
+}
+#videoList>ul{
+    width:280px;
+    display:flex;
+    flex-wrap:wrap;
+}
+#videoList>ul>li{
+    width:52px;
+    height:52px;
+    background-color:#444;
+    margin:1px;
+    text-align:center;
+    line-height:52px;
+}
+#videoList>ul>li>a{
+    font-size:18px;
+    color:#fff;
+}
+#videoList>ul>li:hover{
+    background-color:#4dc060;
+}
+.original>h3{
+    margin:25px 5px;
+    color:#f8f8f8;
+}
+.original>ul>li{
+    height:80px;
+}
+.original>ul img{
+    width:96px;
+}
+.original>ul>li p{
+    width:150px;
+    color:#999;
+    float:right;
+    margin-right:15px;
+    padding:5px;
+}
+.original>ul>li p>span{
+    font-size:12px;
+}
+.original>ul>li p:hover{
+    background-color:#4dc060;
+    color:#f8f8f8;
+}
+/*视频列表结束*/
+/*main结束*/
+
+/*relevant开始*/
+#relate_lf{
+    width:860px;
+}
+#relate_lf>p,
+#relate_rt>p{
+    margin:25px 5px;
+    color:#4dc060;
+    font-size:20px;
+}
+#videoHot{
+    width:870px;
+    display:flex;
+    justify-content:space-between;
+}
+#videoHot>li img{
+    width:207px;
+    margin-bottom:10px;
+}
+/*评论开始*/
+#comment{
+    padding:10px;
+    border:0;
+    outline: 0;
+    font-size:16px;
+}
+#commentate{
+    width:860px;
+    border:4px solid #EBEBEB;
+    /*margin-left:20px;*/
+}
+#commentate p{
+    border-top:4px solid #EBEBEB;
+    padding:15px 5px;
+    color:#666;
+}
+#commentate a{
+    color:#4dc060;
+    font-weight:bold;
+    font-size:16px;
+
+}
+#commentate #submit{
+    padding:14px 25px ;
+    border-radius:3px;
+    background-color:#4dc060;
+    font-size:18px;
+    color:#fff;
+    float:right;
+    position:relative;
+    top:-15px;
+    right:-6px;
+}
+#commentList{
+    padding:20px;
+    margin:20px 0;
+}
+#commentList img{
+    width:70px;
+    padding-right:20px;
+}
+#commentList li{
+    padding:10px 0;
+}
+/*评论结束*/
+/*课程排行榜开始*/
+#relate_rt{
+    width:300px;
+}
+#relate_rt>div.introduce{
+    height:160px;
+    line-height:2;
+    text-align:justify;
+}
+#topList>li{
+    height:80px;
+}
+#topList img{
+    width:80px;
+}
+#topList p{
+    width:200px;
+    color:#333;
+}
+#topList p:hover{
+    color:#4dc060;
+    background-color:#fff;
+}
+#topList p>span{
+    color:#999;
+}
+#topList p>span>b{
+    color:#FF7400;
+}
+/*课程排行榜结束*/
+/*relevant结束*/

@@ -1,0 +1,60 @@
+#aside_lf{
+    width:860px;
+    min-height:500px;
+}
+#aside_rt{
+    width:300px;
+    min-height:500px;
+}
+/*左侧栏开始*/
+#guildChoose{
+    width:840px;
+    padding:20px 0 ;
+    margin:10px;
+}
+#guildChoose>li{
+    float:left;
+    width:60px;
+    height:32px;
+    line-height:32px;
+}
+#guildChoose>li>strong{
+    color: #999;
+    font-weight: normal;
+    float: left;
+}
+#guildChoose>li>a{
+    padding:7px 15px;
+}
+#guildChoose>li.active>a{
+    background-color:#4dc060;
+    color:#fff;
+    border-radius:3px;
+}
+/*课程展示*/
+#guildShows{
+    width:860px;
+    padding:20px 0;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-between;
+    float:left;
+}
+#guildShows dl{
+    width:210px;
+    height:220px;
+    padding:5px 0;
+}
+#guildShows dt img{
+    width:207px;
+    border-radius: 4px;
+}
+
+#guildShows dd h4{
+    font-weight:normal;
+    margin:10px 0;
+}
+#guildShows dd p{
+    padding-right:5px;
+    color:#999;
+}
